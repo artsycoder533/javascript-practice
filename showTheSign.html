@@ -12,21 +12,34 @@
 		<h1 id="result"></h1>
 
 		<script>
-			// write a function that returns x to the power of n, prompt the user for the variables
+			/*
+			Using if..else, write the code which gets a number via prompt and then shows in alert:
+
+			1, if the value is greater than zero,
+			-1, if less than zero,
+			0, if equals zero.
+			In this task we assume that the input is always a number.
+			*/
 
 			const result = document.getElementById("result");
 
-			let answer = prompt(`What is the "official" name of JavaScript?`);
+			let number = prompt(`enter a number`);
             
-            function checkAnswer(answer){
-                if(answer == "ECMAScript"){
-                    alert("Right!");
+			checkNumber(number);
+			
+            function checkNumber(number){
+                if(number > 0){
+                    alert("1");
                 }
-                else {
-                    alert("You dont know? ECMAScript!");
+                else if (number < 0){
+                    alert("-1");
                 }
+				else if(number == 0){
+					alert("0");
+				}
             }
 
+			
 		</script>
 	</body>
 </html>
