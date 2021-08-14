@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>repeat until correct</title>
+</head>
+
+<body>
+    <h1>javascript practice</h1>
+    <h1 id="result"></h1>
+
+    <script>
+        /*
+            Write a loop which prompts for a number greater than 100. If the 
+            visitor enters another number – ask them to input again.
+            The loop must ask for a number until either the visitor enters 
+            a number greater than 100 or cancels the input/enters an empty line. 
+        */
+    
+        let number = prompt("enter a number");
+        while(number < 100){
+            number = prompt("enter a number");
+            if(number === "" || number === null){
+                break;
+            }
+        }
+
+    </script>
+</body>
+</html>
