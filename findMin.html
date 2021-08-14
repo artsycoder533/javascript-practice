@@ -16,11 +16,13 @@
         
         const result = document.getElementById("result");
 
-        let x = prompt("enter the first number");
-        
-        function pow(x, n) {
-            return x;
+        function min(a, b){
+            return a < b ? a : b;
         }
+
+        let smallerNum = min(1, 1);
+
+        result.innerHTML = smallerNum;
     </script>
 </body>
 </html>
